@@ -4,41 +4,12 @@ body {
 
 div.container {
     width: 780px;
-    min-height: 500px;
+    /*min-height: 500px;*/
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
 }
 
-img.image {
-    border-bottom: 5px solid darkolivegreen;
-}
-
-img.grad {
-    width: 175px ;
-}
-div.pic-and-caption {
-    /*float: right;*/
-    width: 175px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    float: right;
-    padding: 0 0.5rem 0 1rem;
-    /*display: flex;*/
-}
-
-div.pic-and-caption a {
-    color: darkred;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding-bottom: .75rem;
-}
-img.grad {
-    /*float: right;*/
-    /*width: 30%;*/
-    padding-bottom: 1rem;
-}
 .container header {
     min-height: 100px;
 }
@@ -55,7 +26,6 @@ div.nav {
 }
 
 div.nav a {
-    text-align: right;
     color: black;
     margin: 0 3px;
     padding: 3px;
@@ -87,18 +57,17 @@ div.nav span a:hover {
 }
 
 .middle {
-    /*background-image: url("uofu_medallion_rt.gif");*/
-    /*background-position: bottom right;*/
-    /*background-repeat: no-repeat;*/
-    background-color: #f2f3f4;
+    background-image: url("uofu_medallion_rt.gif");
+    background-position: bottom right;
+    background-repeat: no-repeat;
 }
 
 section.guts {
-    min-height: 500px;
-    /*background-color: #d2d2bb;*/
-    /*border-radius: 20px;*/
-    /*margin-right: 1rem;*/
-    /*padding-right: 1rem;*/
+    /*min-height: 500px;*/
+    background-color: #d2d2bb;
+    border-radius: 20px;
+    margin: 1rem 1rem 5rem 1rem;
+    padding: 1rem;
 
 }
 
@@ -108,28 +77,10 @@ div.middle section.guts article.main {
 
 }
 
-.left-column {
-    /*background-color: #f2f3f4;*/
-    display: block;
-    height: 680px;
-    width: 240px;
-    /*margin-left: -12px;*/
-    margin-top: -22px;
-    float: left;
-    padding-top: 20px;
-    /*border-right: 1px solid darkolivegreen;*/
-
-}
-
 div.middle section.guts aside.nav {
     float: left;
     width: 220px;
-    /* background-color: #f2f3f4;*/
     /*min-height: 500px;*/
-}
-
-aside {
-    /*margin-left: -20px;*/
 }
 
 aside.nav a {
@@ -147,16 +98,13 @@ aside.nav a:hover {
     background-color: darkolivegreen;
     color: rgba(211, 214, 179);
 }
+ aside.nav div.nav-img-links a{
+     border-bottom: unset;
 
-aside.nav div.nav-img-links a {
-    border-bottom: unset;
-
-}
-
+ }
 div.nav-img-links {
     margin: 9rem 0 0 .5rem;
 }
-
 aside.nav div.nav-img-links a:hover {
     background-color: unset;
     /*border-bottom: unset;*/
@@ -164,79 +112,66 @@ aside.nav div.nav-img-links a:hover {
 
 div.middle section.guts article.main {
     float: right;
-    width: 490px;
-    min-height: 700px;
+    width: 450px;
+    /*min-height: 430px;*/
     background-color: #FFF;
-    padding: 0 1.5rem;
-    border-left: 1px solid darkolivegreen;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding: .5rem;
 }
 
 article.main img {
-    /*width: 100%;*/
+    width: 100%;
 }
 
-article.main h1 {
-    color: darkred;
-    font-weight: bold;
-    font-size: 14pt;
+article.main h1{
+    color: darkolivegreen;
+    font-weight: normal;
+    font-size: 10pt;
+    letter-spacing: 1.5px;
     padding-bottom: 3px;
     text-transform: uppercase;
-    /*border-bottom: 1.5px dotted darkred;*/
+    border-bottom: 1.5px dotted darkred;
     margin-bottom: .5rem;
 }
 
 article.main div.content {
-    /*height: 450px;*/
-    /*overflow: auto;*/
-    font-size: 9pt;
-    text-align: justify;
-    text-justify: inter-word;
+    height: 70px;
+    overflow: auto;
+    font-size: 8pt;
 }
-
-/*article.main a {*/
-/*    display: block;*/
-/*    text-align: right;*/
-/*    margin: .25rem 0 0 0;*/
-/*    text-transform: uppercase;*/
-/*    color: darkred;*/
-/*    font-size: 8pt;*/
-/*    text-decoration: none;*/
-/*}*/
-
+article.main a {
+    display: block;
+    text-align: right;
+    margin: .25rem 0 0 0;
+    text-transform: uppercase;
+    color: darkred;
+    font-size: 8pt;
+    text-decoration: none;
+}
 article.main a:hover {
     text-decoration: underline;
 }
 
 div.content p {
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
-div.bottom {
-    text-align: right;
-    /*border: 1px solid blue;*/
-    /*width: 200px;*/
-    /*margin-left: 550px;*/
-    /*margin-bottom: 10px;*/
-    /*float: right;*/
-
-
+div.content p span {
+    font-weight: bold;
+    margin-bottom: 0;
 }
+
 
 div.bottom a {
     text-transform: lowercase;
     font-size: 6pt;
     padding: 3px;
-
-
 }
 
 .bottom span:after {
     font-size: 6pt;
 }
+
 
 
 footer {
@@ -245,5 +180,5 @@ footer {
     font-size: 9px;
     text-align: center;
     padding: 10px;
-    /*margin-top: 7px;*/
+    margin-top: 7px;
 }
